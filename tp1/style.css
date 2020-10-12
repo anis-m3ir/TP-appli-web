@@ -1,6 +1,20 @@
+body{
+	background-color: #D3D3D3 ;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        color: lightblue; /*le background-color ne marche pas a demander*/
+    }
+}
+@media only screen and (max-width: 600px) {
+    table {
+        width: auto;/*occuper lespace en largeur auto*/
+    }
+  }
 table{
 
 	border-collapse: collapse; /*les bordures du tableau seron collé*/
+	background-color: white;
 }
 td{
 	border: 1px solid black;
@@ -8,4 +22,18 @@ td{
 img{
 	width: 50px;
 	height: 50px;
+}
+a:hover{
+	color: red;
+}
+tr:hover{
+	background-color: green;
+}
+img:hover{
+	width: 100px;
+	height: 100px;
+}
+h1,h2 {
+	display: flex;
+	justify-content: space-around;
 }
