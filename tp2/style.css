@@ -1,0 +1,35 @@
+
+body {
+	background: lightblue;
+}
+#tablex {
+	display: flex;
+	justify-content: space-around;
+}
+h2 {
+	display: flex;
+	justify-content: space-around;
+}
+
+#dd{
+	width: 175px;
+}
+	
+
+
+#erreur {
+	display: flex;
+	justify-content: space-around;
+	margin-left: 515px;
+	width: 315px;
+	background-color: red;
+}
+
+
+#resultat{
+	display: flex;
+	justify-content: space-around;
+	margin-left: 515px;
+	width: 315px;
+	background-color: green;
+}

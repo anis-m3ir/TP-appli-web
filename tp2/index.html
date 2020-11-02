@@ -1,33 +1,78 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP2</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<title>Lire une valeur dans un champs de texte</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css" />
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<script type="text/javascript" src="formulaire.js"></script>
 
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="js/main.js"></script>-->
-    </head>
-    <body>        
-        <h1>tp2</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+</script>
+
+<body> 
+
+<h2>Saisie d'une fiche "Personne"</h2>
+
+
+
+	<table id="tablex">
+	<form class="forme">	
+		<tr>
+		   <td>
+		   	<label>NOM :</label>
+			</td>
+			<td>
+			<input type="text" id="nom"  value="" maxlength="50"><br>
+			
+		   </td>	
+		</tr>	
+		<tr>
+		   <td>
+		   	<label>Prénom :</label>
+		   </td>
+		   <td>
+			<input type="text" id="prenom" value="" maxlength="50"><br>	
+		   </td>	
+		</tr>
+		<tr>
+		   <td>
+		   	<label>Date de naissance :</label>
+			</td>
+			<td>
+			<input type="Date" id="dd" placeholder="JJ/MM/AAAA" value=""><br>	
+		   </td>	
+		</tr>
+		<tr>
+		   <td>
+		   	<label>Adresse :</label>
+			</td>
+			<td>
+			<input type="text" id="adres" value="" maxlength="50"><br>	
+		   </td>	
+		</tr>
+		<tr>
+		   <td>
+		   	<label>Mail :</label>
+			</td>
+			<td>
+			<input type="Mail" id="mail" value=""><br>	
+		   </td>	
+		</tr>
+		<tr>
+		    <td></td>
+		    <td>	
+			<button type="button" onclick="validation()">Essayer</button>
+		   	</td>
+		</tr>	
+	</form>	
+	</table>
+
+
+<div  id="erreur"></div>
+<div id="resultat"></div>
+
+
+
+
+</body>
 </html>
