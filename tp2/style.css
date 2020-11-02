@@ -23,6 +23,7 @@ h2 {
 	margin-left: 515px;
 	width: 315px;
 	background-color: red;
+	display: none;
 }
 
 
@@ -32,4 +33,9 @@ h2 {
 	margin-left: 515px;
 	width: 315px;
 	background-color: green;
+	display: none;
+}
+
+.display{
+	display:block!important;
 }

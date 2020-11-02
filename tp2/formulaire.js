@@ -24,12 +24,14 @@ if(nomLong != 0 && prenom != 0 && addresse != 0 && mail != 0){
 		document.getElementById("erreur").innerHTML="Votre mail doit contenir aumoin 5 caractères"
 	}
 	else  {
-		document.getElementById("erreur").remove("erreur");
+		document.getElementById("erreur").classList.remove("display");
+		document.getElementById("resultat").classList.add("display");
 		document.getElementById("resultat").innerHTML="Bonjour "+nom;
 	}
 }
 else{
-
+	document.getElementById("resultat").classList.remove("display");
+	document.getElementById("erreur").classList.add("display");
 	document.getElementById("erreur").innerHTML="La saisie est obligatoire";
 }
 }
