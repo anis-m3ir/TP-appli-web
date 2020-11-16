@@ -1,0 +1,10 @@
+#p{
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 30px;
+}
+.b{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 50px;
+}
