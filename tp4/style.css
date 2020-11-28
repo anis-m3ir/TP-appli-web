@@ -1,0 +1,35 @@
+#p{
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 30px;
+}
+.b{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 50px;
+}
+#gps{
+	background-color: yellow;
+	color: black;
+	border: solid black;
+}
+#map{
+	margin-left: 100px;
+	margin-bottom: 80px;
+}
+#image{
+	width: 180px;
+	height: 180px;
+}
+#compteur{
+	margin-left: 10px;
+	color: rgb(145, 142, 142);
+}
+#compteur1{
+	margin-left: 10px;
+	color: rgb(145, 142, 142);
+}
+#compteur2{
+	margin-left: 10px;
+	color: rgb(145, 142, 142);
+}

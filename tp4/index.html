@@ -3,31 +3,134 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP4</title>
+        <title>TP3</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
+        <script src="js/jquery-3.2.1.slim.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
         
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="main.js"></script>-->
+                      
+	  <script src="js/form-jquery-validation.js"></script>   
+	  <script src="js/store.js"></script> 
+	  <script src="js/gps.js"></script>
+	 
+	   
+
+        
+      
     </head>
-    <body>        
-        <h1>TP4</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
+
+    <body>  
+
+    <h2 id="p">TP 3</h2>     
+        <div class="container">
+        	<div class="d-flex justify-content-around">
+  				
+					<form>
+ 						<div class="form-group row">
+    						<label for="nom" class="col-sm-4 col-form-label"><strong>Nom</strong></label>
+    							<div class="col-sm-8">
+      								<input id="nom" type="text" class="form-control"  placeholder="Nom" >
+								</div>
+								
+								<div class="form-group row">
+									<div id="compteur"></div>
+								</div>
+  						</div>
+ 						<div class="form-group row">
+    						<label for="inputPrenom" class="col-sm-4 col-form-label"><strong>Prenom</strong></label>
+    							<div class="col-sm-8">
+      								<input type="text" class="form-control" id="prenom" placeholder="Prenom" >
+								</div>
+								<div class="form-group row">
+									<div id="compteur1"></div>
+								</div>
+  							</div>  
+  						<div class="form-group row">
+    						<label for="inputDate" class="col-sm-4 col-form-label"><strong>Date de naissance</strong></label>
+    							<div class="col-sm-8">
+      								<input type="Date" class="form-control" id="date" placeholder="JJ/MM/AAAA">
+    							</div>
+								
+  						</div>
+   						<div class="form-group row">
+    						<label for="inputAdresse" class="col-sm-4 col-form-label"><strong>Adresse</strong></label>
+    							<div class="col-sm-6">
+      								<input type="text" class="form-control" id="adresse" placeholder="Adresse">
+								</div>
+								<div class="form-group row">
+									<button type="button" id="gps" class="btn btn-primary">📍GPS</button>
+								</div>
+								  </div id="maps">
+								  <div id="map">
+									<img id="image" src="https://maps.googleapis.com/maps/api/staticmap?markers=latitude,longitude&zoom=14&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg" alt="">	
+
+								  </div>
+   						<div class="form-group row">
+    						<label for="inputEmail3" class="col-sm-4 col-form-label"><strong>Email</strong></label>
+    							<div class="col-sm-8">
+      								<input type="email" class="form-control" id="mail" placeholder="Email" >
+								</div>
+								<div class="form-group row">
+									<div id="compteur2"></div>
+								</div>
+  						</div>
+
+					</form>
+
+			</div>	
+				 <div class="b">
+      					<button type="button" id="Ajouter" class="btn btn-primary">Ajouter</button>
+    			</div>
+		</div>
+
+
+		<table class="table table-striped">
+			
+			<thead>
+				<tr>
+					<th scope="col"><h4>Liste des contactes</h4></th>
+				  </tr>
+			  <tr>
+				<th scope="col">#</th>
+				<th scope="col">Nom</th>
+				<th scope="col">Prenom</th>
+				<th scope="col">Date</th>
+				<th scope="col">Adresse</th>
+				<th scope="col">Mail</th>
+			  </tr>
+			</thead>
+			<tbody>
+		
+			</tbody>
+		  </table>
+		  
+	
+		
+		<div class="modal" tabindex="-1" role="dialog" id="myModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Corps de la modal à modifier après validation du formulaire</p>
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
+        
     </body>
 </html>
